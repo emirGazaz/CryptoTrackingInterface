@@ -1,4 +1,4 @@
-$(function () {
+ $(function () {
     let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
@@ -17,7 +17,7 @@ $(function () {
                 localStorage.setItem("userArr", JSON.stringify(userArr));
             }
         }
-    }
+    } h
 
     // Call this when the menu page loads to ensure wallet sync
     updateCurrentUserWallet();
@@ -89,7 +89,7 @@ $(function () {
             
             userArr.forEach((user, index) => {
                 userSection.append(`
-                    <a href="../255-projct/nextDayPart.html">
+                    <a href="../nextDayPart.html">
                         <div class="user" id="user${index}">
                             <i class="fa fa-user"></i> ${user.name}
                             <div class="close-button">x</div>
